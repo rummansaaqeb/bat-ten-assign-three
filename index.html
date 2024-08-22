@@ -23,10 +23,10 @@
 
 <body class="font-manrope">
     <!-- Header Section -->
-     <header>
+     <header class="bg-slate-50">
         <nav>
             <!-- Navbar -->
-            <div class="navbar bg-base-100 container mx-auto">
+            <div class="navbar bg-slate-50 container mx-auto mb-14">
                 <div class="navbar-start">
                     <div class="btn btn-ghost">
                         <i class="rounded-[50%] bg-lime-400 fa-solid -rotate-45 fa-arrow-right-long p-2"></i>
@@ -44,7 +44,7 @@
                 </div>
                 <div class="navbar-end">
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ml-24">
+                        <div tabindex="0" role="button" class="btn btn-circle border-2 border-slate-200 lg:hidden mr-3 bg-white">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             class="h-5 w-5"
@@ -60,7 +60,7 @@
                         </div>
                         <ul
                           tabindex="0"
-                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow lg:hidden md:hidden">
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow lg:hidden">
                           <li class="font-bold text-slate-500"><a>Home</a></li>
                           <li class="text-slate-500"><a>Services</a></li>
                           <li class="text-slate-500"><a>Portfolio</a></li>
@@ -76,6 +76,14 @@
                 </div>
               </div>
         </nav>
+
+        <!-- Banner Section -->
+         <section class="flex flex-col justify-center items-center">
+            <img class="lg:w-1/4 mb-6" src="./assets/banner.png" alt="">
+            <h3 class="text-center font-black lg:text-6xl text-4xl mb-6">A barn house of this design has a <br class="hidden lg:block"> striking appearance</h3>
+            <p class="text-center mb-6 mx-3">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br class="hidden lg:block"> accents, and large windows that flood the space with natural light.</p>
+            <button class="btn mb-28 btn-ghost bg-lime-200 rounded-3xl font-bold w-5/6 lg:w-auto">View Details<i class="rounded-[50%] bg-lime-300 fa-solid -rotate-45 fa-arrow-right-long p-2 ml-2"></i></button>
+         </section>
      </header>
 
      <!-- Main Section -->
