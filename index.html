@@ -2,179 +2,251 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 3</title>
-    <!-- Tailwind And DaisyUI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Font CDN -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <!-- Font Awesome CDN -->
-    <script src="https://kit.fontawesome.com/21521de5f6.js" crossorigin="anonymous"></script>
-    <style>
-        .font-manrope{
-            font-family: "Manrope", sans-serif;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 3</title>
+  <!-- Tailwind And DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Font CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/21521de5f6.js" crossorigin="anonymous"></script>
+  <style>
+    .font-manrope {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
 </head>
 
 <body class="font-manrope">
-    <!-- Header Section -->
-     <header class="bg-slate-50">
-        <nav>
-            <!-- Navbar -->
-            <div class="navbar bg-slate-50 container mx-auto mb-14">
-                <div class="navbar-start">
-                    <div class="btn btn-ghost">
-                        <i class="rounded-[50%] bg-lime-400 fa-solid -rotate-45 fa-arrow-right-long p-2"></i>
-                        <a class="text-xl font-black ml-0.5">Rinterio</a>
-                    </div>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li class="font-bold text-slate-500"><a>Home</a></li>
-                    <li class="text-slate-500"><a>Services</a></li>
-                    <li class="text-slate-500"><a>Portfolio</a></li>
-                    <li class="text-slate-500"><a>Blogs</a></li>
-                    <li class="text-slate-500"><a>Contact Us</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-circle border-2 border-slate-200 lg:hidden mr-3 bg-white">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M4 6h16M4 12h8m-8 6h16" />
-                          </svg>
-                        </div>
-                        <ul
-                          tabindex="0"
-                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow lg:hidden">
-                          <li class="font-bold text-slate-500"><a>Home</a></li>
-                          <li class="text-slate-500"><a>Services</a></li>
-                          <li class="text-slate-500"><a>Portfolio</a></li>
-                          <li class="text-slate-500"><a>Blogs</a></li>
-                          <li class="text-slate-500"><a>Contact Us</a></li>
-                        </ul>
-                      </div>
-                      <i class="fa-solid btn btn-circle bg-white text-lg text-slate-500 p-2 fa-magnifying-glass hidden lg:block"></i>
-                      <i class="fa-solid btn btn-circle bg-white text-lg text-slate-500 p-2 fa-cart-shopping hidden lg:block ml-4"></i>
-                  <div>
-                    <a class="btn bg-lime-300 rounded-3xl hidden lg:block ml-4 pt-2 font-bold">Book Consult<i class="rounded-[50%] bg-black fa-solid -rotate-45 fa-arrow-right-long p-2 text-white ml-2"></i></a>
-                  </div>
-                </div>
-              </div>
-        </nav>
-
-        <!-- Banner Section -->
-         <section class="flex flex-col justify-center items-center">
-            <img class="lg:w-1/4 mb-6" src="./assets/banner.png" alt="">
-            <h3 class="text-center font-black lg:text-6xl text-4xl mb-6">A barn house of this design has a <br class="hidden lg:block"> striking appearance</h3>
-            <p class="text-center mb-6 mx-3">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br class="hidden lg:block"> accents, and large windows that flood the space with natural light.</p>
-            <button class="btn mb-28 btn-ghost bg-lime-200 rounded-3xl font-bold w-5/6 lg:w-auto">View Details<i class="rounded-[50%] bg-lime-300 fa-solid -rotate-45 fa-arrow-right-long p-2 ml-2"></i></button>
-         </section>
-     </header>
-
-     <!-- Main Section -->
-      <main class="bg-gray-200">
-
-        <!-- We Design Section -->
-         <section class="bg-gray-200 relative container mx-auto">
-         <div class="flex flex-col lg:flex-row lg:justify-around">
-           <!-- Content -->
-           <div>
-            <button class="btn btn-sm rounded-3xl mt-32 mb-4 lg:ml-0 ml-40"><i class="fa-solid fa-arrow-right-long"></i>About Us</button>
-            <h1 class="text-3xl lg:text-4xl  font-black mb-6 text-center lg:text-start">We design thoughtful, <br class="hidden lg:block"> liveable spaces</h1>
-            <p class="mb-6 lg:mx-0 mx-2 text-center lg:text-start font-semibold">We ensure that our customers get the best from us. Our team are passionate <br class="hidden lg:block"> about their work and always gives the best to everyone.</p>
-                       <!-- Cards --> 
-
-
-                        <!-- Card-1 -->
-                       <div class="bg-white flex mb-6 p-5 w-5/6 rounded-xl space-x-4 mx-auto lg:mx-0">
-                        <img class="w-12 h-12 lg:w-auto lg:h-auto" src="./assets/commercial.png" alt="">
-                        <div>
-                          <h5 class="font-black">Commercial</h5>
-                          <p>Our Company Provides The Best Design For Your Commercial Business Space</p>
-                        </div>
-                      </div>
-                      <!-- Card-2 -->
-                      <div class="bg-white flex p-5 w-5/6 rounded-xl space-x-4 lg:mb-32 mx-auto lg:mx-0">
-                        <img class="w-12 h-12 lg:w-auto lg:h-auto" src="./assets/residential.png" alt="">
-                        <div>
-                          <h5 class="font-black">Residential</h5>
-                          <p>Our Company Provides The Best Design For Your Home And Your Loved Ones.</p>
-                        </div>
-                      </div>
-           </div>
-
-           <!-- Image -->
-            <div class="mt-6 lg:mt-24 lg:ml-40">
-              <img class="lg:w-auto lg:h-auto w-96 h-72 rouned-3xl mx-auto" src="./assets/villa.png" alt="">
-            </div>
-            <div class="absolute top-16 -left-2 hidden lg:block">
-              <img src="./assets/vector.png" alt="">
-            </div>
-         </div>
-         </section>
-
-         <!-- Our Work Process Section -->
-         <section class="mt-24 mb-24 bg-gray-200">
-          <div class="text-center">
-            <button class="btn btn-sm rounded-3xl mb-4"><i class="fa-solid fa-arrow-right-long"></i>About Us</button>
-            <h1 class="text-3xl lg:text-4xl font-black mb-6">Our Work Process</h1>
-            <p class="font-semibold mb-8">We give our employees a lot of time to think and come out with a creative result, <br> That's what enchants our work process.</p>
+  <!-- Header Section -->
+  <header class="bg-slate-50">
+    <nav>
+      <!-- Navbar -->
+      <div class="navbar bg-slate-50 container mx-auto mb-14">
+        <div class="navbar-start">
+          <div class="btn btn-ghost">
+            <i class="rounded-[50%] bg-lime-400 fa-solid -rotate-45 fa-arrow-right-long p-2"></i>
+            <a class="text-xl font-black ml-0.5">Rinterio</a>
           </div>
-          <!-- Cards -->
-           <div class="flex flex-col lg:flex-row container mx-auto lg:space-x-6 space-x-0 lg:space-y-0 space-y-6 justify-center items-center lg:justify-start lg:items-start">
-            <!-- Card-1 -->
-            <div class="card bg-[#E7C1D3] w-96 shadow-xl">
-              <div class="card-body">
-                <img class="w-12 h-12" src="./assets/concept.png" alt="">
-                <h2 class="card-title font-black text-2xl">Concept</h2>
-                <p class="font-semibold">This is the most lengthy part of the process. Our team always tries to come up with creative concepts.</p>
-              </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="font-bold text-slate-500"><a>Home</a></li>
+            <li class="text-slate-500"><a>Services</a></li>
+            <li class="text-slate-500"><a>Portfolio</a></li>
+            <li class="text-slate-500"><a>Blogs</a></li>
+            <li class="text-slate-500"><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-circle border-2 border-slate-200 lg:hidden mr-3 bg-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
-            <!-- Card-2 -->
-            <div class="card bg-[#EFDA6E] w-96 lg:h-[233px] shadow-xl">
-              <div class="card-body">
-                <img class="w-12 h-12" src="./assets/process.png" alt="">
-                <h2 class="card-title font-black text-2xl">Design Process</h2>
-                <p class="font-semibold">Our designing team always come up with commendable designs.</p>
-              </div>
-            </div>
-            <!-- Card-3 -->
-            <div class="card bg-[#A4DAC3] w-96 lg:h-[233px] shadow-xl">
-              <div class="card-body">
-                <img class="w-12 h-12" src="./assets/vision.png" alt="">
-                <h2 class="card-title font-black text-2xl">Supervision</h2>
-                <p class="font-semibold">After that, all of the designs get revised by the professionals.</p>
-              </div>
-            </div>
-            <!-- Card-4 -->
-            <div class="card bg-[#77AAEA] w-96 shadow-xl">
-              <div class="card-body">
-                <img class="w-12 h-12" src="./assets/calculator.png" alt="">
-                <h2 class="card-title font-black text-2xl">Budget Planning</h2>
-                <p class="font-semibold">Our economy gets managed by professionals and they plan the budget for every project.</p>
-              </div>
-            </div>
-           </div>
-         </section>
-      </main>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow lg:hidden">
+              <li class="font-bold text-slate-500"><a>Home</a></li>
+              <li class="text-slate-500"><a>Services</a></li>
+              <li class="text-slate-500"><a>Portfolio</a></li>
+              <li class="text-slate-500"><a>Blogs</a></li>
+              <li class="text-slate-500"><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <i
+            class="fa-solid btn btn-circle bg-white text-lg text-slate-500 p-2 fa-magnifying-glass hidden lg:block"></i>
+          <i
+            class="fa-solid btn btn-circle bg-white text-lg text-slate-500 p-2 fa-cart-shopping hidden lg:block ml-4"></i>
+          <div>
+            <a class="btn bg-lime-300 rounded-3xl hidden lg:block ml-4 pt-2 font-bold">Book Consult<i
+                class="rounded-[50%] bg-black fa-solid -rotate-45 fa-arrow-right-long p-2 text-white ml-2"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-      <!-- Footer Section -->
-       <footer></footer>
+    <!-- Banner Section -->
+    <section class="flex flex-col justify-center items-center">
+      <img class="lg:w-1/4 mb-6" src="./assets/banner.png" alt="">
+      <h3 class="text-center font-black lg:text-6xl text-4xl mb-6">A barn house of this design has a <br
+          class="hidden lg:block"> striking appearance</h3>
+      <p class="text-center mb-6 mx-3">The barn house captivates with its blend of rustic charm and modern
+        sophistication, featuring weathered wood, sleek metal <br class="hidden lg:block"> accents, and large windows
+        that flood the space with natural light.</p>
+      <button class="btn mb-28 btn-ghost bg-lime-200 rounded-3xl font-bold w-5/6 lg:w-auto">View Details<i
+          class="rounded-[50%] bg-lime-300 fa-solid -rotate-45 fa-arrow-right-long p-2 ml-2"></i></button>
+    </section>
+  </header>
+
+  <!-- Main Section -->
+  <main class="bg-gray-200">
+
+    <!-- We Design Section -->
+    <section class="bg-gray-200 relative container mx-auto">
+      <div class="flex flex-col lg:flex-row lg:justify-around">
+        <!-- Content -->
+        <div>
+          <button class="btn btn-sm rounded-3xl mt-32 mb-4 lg:ml-0 ml-40"><i
+              class="fa-solid fa-arrow-right-long"></i>About Us</button>
+          <h1 class="text-3xl lg:text-4xl  font-black mb-6 text-center lg:text-start">We design thoughtful, <br
+              class="hidden lg:block"> liveable spaces</h1>
+          <p class="mb-6 lg:mx-0 mx-2 text-center lg:text-start font-semibold">We ensure that our customers get the best
+            from us. Our team are passionate <br class="hidden lg:block"> about their work and always gives the best to
+            everyone.</p>
+          <!-- Cards -->
+
+
+          <!-- Card-1 -->
+          <div class="bg-white flex mb-6 p-5 w-5/6 rounded-xl space-x-4 mx-auto lg:mx-0">
+            <img class="w-12 h-12 lg:w-auto lg:h-auto" src="./assets/commercial.png" alt="">
+            <div>
+              <h5 class="font-black">Commercial</h5>
+              <p>Our Company Provides The Best Design For Your Commercial Business Space</p>
+            </div>
+          </div>
+          <!-- Card-2 -->
+          <div class="bg-white flex p-5 w-5/6 rounded-xl space-x-4 lg:mb-32 mx-auto lg:mx-0">
+            <img class="w-12 h-12 lg:w-auto lg:h-auto" src="./assets/residential.png" alt="">
+            <div>
+              <h5 class="font-black">Residential</h5>
+              <p>Our Company Provides The Best Design For Your Home And Your Loved Ones.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="mt-6 lg:mt-24 lg:ml-40">
+          <img class="lg:w-auto lg:h-auto w-96 h-72 rouned-3xl mx-auto" src="./assets/villa.png" alt="">
+        </div>
+        <div class="absolute top-16 -left-2 hidden lg:block">
+          <img src="./assets/vector.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Work Process Section -->
+    <section class="mt-24 pb-24 bg-gray-200">
+      <div class="text-center">
+        <button class="btn btn-sm rounded-3xl mb-4"><i class="fa-solid fa-arrow-right-long"></i>About Us</button>
+        <h1 class="text-3xl lg:text-4xl font-black mb-6">Our Work Process</h1>
+        <p class="font-semibold mb-8">We give our employees a lot of time to think and come out with a creative result,
+          <br> That's what enchants our work process.</p>
+      </div>
+      <!-- Cards -->
+      <div
+        class="flex flex-col lg:flex-row container mx-auto lg:space-x-6 space-x-0 lg:space-y-0 space-y-6 justify-center items-center lg:justify-start lg:items-start">
+        <!-- Card-1 -->
+        <div class="card bg-[#E7C1D3] w-96 shadow-xl">
+          <div class="card-body">
+            <img class="w-12 h-12" src="./assets/concept.png" alt="">
+            <h2 class="card-title font-black text-2xl">Concept</h2>
+            <p class="font-semibold">This is the most lengthy part of the process. Our team always tries to come up with
+              creative concepts.</p>
+          </div>
+        </div>
+        <!-- Card-2 -->
+        <div class="card bg-[#EFDA6E] w-96 lg:h-[233px] shadow-xl">
+          <div class="card-body">
+            <img class="w-12 h-12" src="./assets/process.png" alt="">
+            <h2 class="card-title font-black text-2xl">Design Process</h2>
+            <p class="font-semibold">Our designing team always come up with commendable designs.</p>
+          </div>
+        </div>
+        <!-- Card-3 -->
+        <div class="card bg-[#A4DAC3] w-96 lg:h-[233px] shadow-xl">
+          <div class="card-body">
+            <img class="w-12 h-12" src="./assets/vision.png" alt="">
+            <h2 class="card-title font-black text-2xl">Supervision</h2>
+            <p class="font-semibold">After that, all of the designs get revised by the professionals.</p>
+          </div>
+        </div>
+        <!-- Card-4 -->
+        <div class="card bg-[#77AAEA] w-96 shadow-xl">
+          <div class="card-body">
+            <img class="w-12 h-12" src="./assets/calculator.png" alt="">
+            <h2 class="card-title font-black text-2xl">Budget Planning</h2>
+            <p class="font-semibold">Our economy gets managed by professionals and they plan the budget for every
+              project.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Our Latest Portfolio Section -->
+  <section class="mt-24 bg-white container mx-auto mb-24">
+    <!-- Title -->
+    <div class="text-center">
+      <button class="btn btn-sm btn-wide bg-[#ABEF5F33] rounded-3xl mb-4"><i class="fa-solid fa-arrow-right-long"></i>Explore our Latest works</button>
+      <h1 class="text-3xl lg:text-4xl font-black mb-6">Our Latest Portfolio</h1>
+      <p class="font-semibold mb-8">Check Out our latest portfolio made by professionals and improved by the <br class="hidden lg:block"> feedbacks of our customers.</p>
+    </div>
+    <!-- Cards -->
+     <div class="grid lg:grid-cols-5 grid-cols-1 gap-10">
+
+      <!-- Card-1 -->
+       <div class="lg:col-span-3 border lg:border-2 rounded-xl p-6 mx-5 lg:mx-0">
+        <div class="flex flex-col lg:flex-row items-center justify-center">
+          <div>
+            <img class="w-96 mt-5 lg:border-dashed lg:border-2" src="./assets/img1.png" alt="">
+          </div>
+          <div class="flex flex-col ml-6 relative">
+            <div class="mb-20">
+              <h3 class="font-bold text-2xl mb-9 mt-6 lg:mt-0">Commercial</h3>
+              <p class="text-slate-500 font-bold">Check out this commercial portfolio from Rinterio Official.<br class="hidden lg:block">This portfolio has everything you need to know about our<br class="hidden lg:block">company's commercial designs side</p>
+            </div>
+            <button class="btn btn-ghost w-3/4 lg:w-1/2 absolute lg:top-52 lg:-left-6 top-56 -left-12">
+              <a class="text-xl font-black ml-0.5">View Details</a>
+              <i class="rounded-[50%] bg-lime-400 fa-solid -rotate-45 fa-arrow-right-long p-2"></i>
+            </button>
+          </div>
+        </div>
+       </div>
+       <!-- Card-2 -->
+        <div class="lg:col-span-2">
+          <img class="w-[390px] lg:w-full border lg:border-2 p-6 rounded-xl mx-auto lg:mx-0" src="./assets/img2.png" alt="">
+        </div>
+        <!-- Card-3 -->
+         <div class="w-[390px] lg:w-full border lg:border-2 p-6 rounded-xl mx-auto lg:mx-0">
+          <img class="w-full h-full" src="./assets/img3.png" alt="">
+         </div>
+         <!-- Card-4 -->
+         <div class="lg:col-span-3 border lg:border-2 rounded-xl p-6 mx-5 lg:mx-0">
+          <div class="flex flex-col lg:flex-row items-center justify-center">
+            <div>
+              <img class="w-80 mt-5 lg:border-dashed lg:border-2" src="./assets/img4.png" alt="">
+            </div>
+            <div class="flex flex-col ml-6 relative">
+              <div class="mb-20">
+                <h3 class="font-bold text-2xl mb-9 mt-6 lg:mt-0">Residential</h3>
+                <p class="text-slate-500 font-bold">Check out this residential portfolio from Rinterio Official.<br class="hidden lg:block">This portfolio has everything you need to know about our<br class="hidden lg:block">company's residential designs side</p>
+              </div>
+              <button class="btn btn-ghost w-3/4 lg:w-1/2 absolute lg:top-52 lg:-left-6 top-56 -left-">
+                <a class="text-xl font-black ml-0.5">View Details</a>
+                <i class="rounded-[50%] bg-lime-400 fa-solid -rotate-45 fa-arrow-right-long p-2"></i>
+              </button>
+            </div>
+          </div>
+         </div>
+         <!-- Card-5 -->
+         <div class="w-[390px] lg:w-full border lg:border-2 p-6 rounded-xl mx-auto lg:mx-0">
+          <img class="w-full h-full" src="./assets/img5.png" alt="">
+         </div>
+         <!-- Card-6 -->
+         <div class="w-[390px] lg:w-full border lg:border-2 p-6 rounded-xl mx-auto lg:mx-0 lg:hidden block">
+          <img class="w-full h-full" src="./assets/img3.png" alt="">
+         </div>
+     </div>
+
+  </section>
+  <!-- Footer Section -->
+  <footer></footer>
 </body>
 
 </html>
